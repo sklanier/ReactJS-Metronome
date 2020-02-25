@@ -4,6 +4,7 @@ import './index.css';
 import Metronome from './Metronome';
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(<Metronome />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
