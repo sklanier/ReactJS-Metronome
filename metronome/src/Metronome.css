@@ -6,7 +6,7 @@
 }
 
 .metronome {
-  height: 100%;
+  height: auto;
   width: auto;
   text-align: center;
   position: absolute;
@@ -14,6 +14,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 630px;
+}
+
+.metronomeContainer {
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(180deg, #100714 0%, #1E1E53 100%);
+  border: 5px solid #3415A9;
+  box-shadow: 0 94px 250px -20px #FF7F4D;
+  border-radius: 200px;
 }
   
 .bpm-slider input {
@@ -32,4 +41,11 @@
   width: 100px;
   color: #fff;
   font-size: 18px;
+}
+
+.heroImg {
+  background-image: url(/assets/img/Metronome-Logo@2x.png);
+  height: 344px;
+  width: 566px;
+  margin: auto;
 }

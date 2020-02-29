@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Metronome.css';
 import click1 from './sounds/click1.wav';
 import click2 from './sounds/click2.wav';
-import MetronomeContainer from './components/MetronomeContainer.js'
+
 
 class Metronome extends Component {
     constructor(props) {
@@ -83,20 +83,24 @@ class Metronome extends Component {
     
         return (
           <div id="root">
+            
             <body className="bgImg">
-              <div className="metronome">
-                <div className="bpm-slider">
-                  <div>{bpm} BPM</div>
-                  <input
-                    type="range"
-                    min="60"
-                    max="240"
-                    value={bpm}
-                    onChange={this.handleBpmChange} />
+              <div className="heroImg"></div>
+              <div className="metronomeContainer">
+                <div className="metronome">
+                  <div className="bpm-slider">
+                    <div>{bpm} BPM</div>
+                    <input
+                      type="range"
+                      min="60"
+                      max="240"
+                      value={bpm}
+                      onChange={this.handleBpmChange} />
+                  </div>
+                  <button onClick={this.startStop}>
+                    {playing ? 'Stop' : 'Start'}
+                  </button>
                 </div>
-                <button onClick={this.startStop}>
-                  {playing ? 'Stop' : 'Start'}
-                </button>
               </div>
             </body>
           </div>
