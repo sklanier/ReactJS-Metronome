@@ -4,6 +4,7 @@ import click1 from './sounds/click1.wav';
 import click2 from './sounds/click2.wav';
 
 
+
 class Metronome extends Component {
     constructor(props) {
         super(props);
@@ -85,7 +86,7 @@ class Metronome extends Component {
           <div id="root">
             
             <body className="bgImg">
-              <div className="heroImg"></div>
+              <img className= "heroImg" src={'./assets/img/Metronome-Logo@2x.png'}></img>
               <div className="metronomeContainer">
                 <div className="metronome">
                   <div className="bpm-slider">

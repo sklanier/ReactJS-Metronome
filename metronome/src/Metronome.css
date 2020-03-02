@@ -3,34 +3,32 @@
   background-image: url(/assets/img/Metronome-BG.png);
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .metronome {
-  height: auto;
-  width: auto;
+  justify-content: center;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 630px;
+  max-width: 530px;
 }
 
 .metronomeContainer {
-  width: auto;
-  height: auto;
+  z-index: 0;
+  margin: auto;
+  width: 370px;
+  height: 700px;
   background-image: linear-gradient(180deg, #100714 0%, #1E1E53 100%);
   border: 5px solid #3415A9;
   box-shadow: 0 94px 250px -20px #FF7F4D;
-  border-radius: 200px;
+  border-radius: 350px;
+  transform: translateY(-197px);
 }
   
 .bpm-slider input {
-  width: auto;
-  margin: 0px;
-  padding: 38px;
-  align-items: center;
-  align-content: center;
+  width: 375px;
+  margin-top: 350px;
+  transform: rotate(90deg);
 }
 
 .metronome button {
@@ -41,11 +39,13 @@
   width: 100px;
   color: #fff;
   font-size: 18px;
+  margin-top: 300px;
 }
 
 .heroImg {
-  background-image: url(/assets/img/Metronome-Logo@2x.png);
-  height: 344px;
-  width: 566px;
-  margin: auto;
+  z-index: 1;
+  max-width: 310px;
+  margin-top: 220px;
+  margin-left: auto;
+  margin-right: auto;
 }
