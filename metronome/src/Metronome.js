@@ -3,6 +3,9 @@ import './Metronome.css';
 import click1 from './sounds/click1.wav';
 import click2 from './sounds/click2.wav';
 import { ReactComponent as PlayIcon } from './img/play.svg'
+import { ReactComponent as PlayOnHoverIcon } from './img/playOnHover.svg'
+import { ReactComponent as PauseIcon } from './img/pause.svg'
+import { ReactComponent as PauseOnHoverIcon } from './img/pauseOnHover.svg'
 
 
 class Metronome extends Component {
@@ -82,7 +85,13 @@ class Metronome extends Component {
     
     render() {
         const { playing, bpm } = this.state;
-    
+        let button;
+
+        if (!playing) {
+          button = <PlayIcon onClick={this.startStop}></PlayIcon>
+        } else {
+          button = <PlayIcon onClick={this.startStop}></PlayIcon>
+        }
         return (
           <div id="root">
             
@@ -98,9 +107,8 @@ class Metronome extends Component {
                       max="240"
                       value={bpm}
                       onChange={this.handleBpmChange} />
+                    {button}
                   </div>
-                  <PlayIcon className="playButton"></PlayIcon>
-                  
                 </div>
               </div>
             </body>
