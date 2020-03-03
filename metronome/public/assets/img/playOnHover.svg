@@ -1,0 +1,26 @@
+<svg width="148px" height="158px" viewBox="0 0 148 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="78 47 102 95 54 95"></polygon>
+        <filter x="-131.3%" y="-170.0%" width="433.5%" height="433.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="17" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="22.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Metronome-1440px" transform="translate(-646.000000, -766.000000)">
+            <g id="Group-3" transform="translate(520.000000, 113.000000)">
+                <g id="Start" transform="translate(129.000000, 656.000000)">
+                    <circle id="Oval" stroke="#4E0B88" stroke-width="5" fill="#5D10A0" cx="71" cy="71" r="71"></circle>
+                    <ellipse id="Oval" fill="#6F22B1" cx="71" cy="100.5" rx="53" ry="38.5"></ellipse>
+                    <g id="Triangle" stroke-linejoin="round" transform="translate(78.000000, 71.000000) rotate(-270.000000) translate(-78.000000, -71.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#FF8D63" stroke-width="5" fill="#FF8D63" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

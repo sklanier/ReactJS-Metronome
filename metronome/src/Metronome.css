@@ -31,21 +31,19 @@
   transform: rotate(90deg);
 }
 
-.metronome button {
-  background: #2b50cc;
-  padding: 10px;
-  border: 1px solid #2fa2cf;
-  border-radius: 2px;
-  width: 100px;
-  color: #fff;
-  font-size: 18px;
-  margin-top: 300px;
-}
-
 .heroImg {
   z-index: 1;
   max-width: 310px;
   margin-top: 220px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.playButton {
+  
+  margin-top: 225px;
+}
+
+.playButton.PLAY {
+
 }

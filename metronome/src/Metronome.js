@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Metronome.css';
 import click1 from './sounds/click1.wav';
 import click2 from './sounds/click2.wav';
-
+import { ReactComponent as PlayIcon } from './img/play.svg'
 
 
 class Metronome extends Component {
@@ -79,6 +79,7 @@ class Metronome extends Component {
         }));
     };
 
+    
     render() {
         const { playing, bpm } = this.state;
     
@@ -93,14 +94,13 @@ class Metronome extends Component {
                     <div>{bpm} BPM</div>
                     <input
                       type="range"
-                      min="60"
+                      min="40"
                       max="240"
                       value={bpm}
                       onChange={this.handleBpmChange} />
                   </div>
-                  <button onClick={this.startStop}>
-                    {playing ? 'Stop' : 'Start'}
-                  </button>
+                  <PlayIcon className="playButton"></PlayIcon>
+                  
                 </div>
               </div>
             </body>
