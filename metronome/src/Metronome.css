@@ -34,17 +34,13 @@
 .heroImg {
   z-index: 1;
   max-width: 310px;
-  margin-top: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   transform: translateY(90px);
 }
 
 .playButton {
-  
   margin-top: 220px;
-}
-
-.playButton.PLAY {
-
 }
