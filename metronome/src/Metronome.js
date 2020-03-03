@@ -87,16 +87,16 @@ class Metronome extends Component {
         const { playing, bpm } = this.state;
         let button;
 
-        if (!playing) {
-          button = <PlayIcon onClick={this.startStop}></PlayIcon>
+        if (playing) {
+          button = <PauseIcon className="playButton" onClick={this.startStop}/>
         } else {
-          button = <PlayIcon onClick={this.startStop}></PlayIcon>
+          button = <PlayIcon className="playButton" onClick={this.startStop}/>
         }
         return (
           <div id="root">
             
             <body className="bgImg">
-              <img className= "heroImg" src={'./assets/img/Metronome-Logo@2x.png'}></img>
+              <img className= "heroImg" src={'./assets/img/Metronome-Logo@2x.png'} alt=""></img>
               <div className="metronomeContainer">
                 <div className="metronome">
                   <div className="bpm-slider">

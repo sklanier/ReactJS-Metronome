@@ -22,7 +22,7 @@
   border: 5px solid #3415A9;
   box-shadow: 0 94px 250px -20px #FF7F4D;
   border-radius: 350px;
-  transform: translateY(-197px);
+  transform: translateY(-100px);
 }
   
 .bpm-slider input {
@@ -34,14 +34,15 @@
 .heroImg {
   z-index: 1;
   max-width: 310px;
-  margin-top: 220px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
+  transform: translateY(90px);
 }
 
 .playButton {
   
-  margin-top: 225px;
+  margin-top: 220px;
 }
 
 .playButton.PLAY {
