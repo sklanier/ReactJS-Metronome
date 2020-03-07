@@ -23,6 +23,10 @@ class Metronome extends Component {
         this.click2 = new Audio(click2);
     }
 
+    handleMouseOver = event => {
+
+    }
+
     handleBpmChange = event => {
         const bpm = event.target.value;
       
@@ -92,10 +96,14 @@ class Metronome extends Component {
         } else {
           button = <PlayIcon className="playButton" onClick={this.startStop}/>
         }
+
+       
+        
+
         return (
           <div id="root">
             
-            <body className="bgImg">
+            <div className="bgImg">
               <img className= "heroImg" src={'./assets/img/Metronome-Logo@2x.png'} alt=""></img>
               <div className="metronomeContainer">
                 <div className="metronome">
@@ -107,11 +115,13 @@ class Metronome extends Component {
                       max="240"
                       value={bpm}
                       onChange={this.handleBpmChange} />
-                    {button}
+                    <div onMouseOver={this.handleMouseOver}>
+                      {this.state.hover ? <PauseOnHoverIcon /> : button}
+                    </div>
                   </div>
                 </div>
               </div>
-            </body>
+            </div>
           </div>
         );
       }

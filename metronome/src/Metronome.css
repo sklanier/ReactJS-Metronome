@@ -44,3 +44,8 @@
 .playButton {
   margin-top: 220px;
 }
+
+.playButton:hover {
+  background: black;
+  z-index: 1;
+}
