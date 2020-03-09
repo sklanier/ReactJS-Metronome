@@ -45,7 +45,8 @@
   margin-top: 220px;
 }
 
-.playButton:hover {
-  background: black;
-  z-index: 1;
+.sliderMain {
+  background-image: url(./img/slider.svg);
+  width: auto;
+  height: auto;
 }

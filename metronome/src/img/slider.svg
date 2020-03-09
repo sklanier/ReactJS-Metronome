@@ -1,0 +1,14 @@
+<svg width="70px" height="35px" viewBox="0 0 70 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Metronome-1440px" transform="translate(-685.000000, -571.000000)">
+            <g id="Group-3" transform="translate(520.000000, 113.000000)">
+                <g id="Group-2" transform="translate(165.000000, 458.000000)">
+                    <rect id="Rectangle" fill="#FF8D63" x="0" y="0" width="70" height="35" rx="17.5"></rect>
+                    <line x1="58" y1="12.5" x2="13" y2="12.5" id="Line-2" stroke="#161631" stroke-width="2" opacity="0.3" stroke-linecap="square"></line>
+                    <line x1="58" y1="18" x2="13" y2="18" id="Line-2-Copy" stroke="#161631" stroke-width="2" opacity="0.3" stroke-linecap="square"></line>
+                    <line x1="58" y1="24" x2="13" y2="24" id="Line-2-Copy-2" stroke="#161631" stroke-width="2" opacity="0.3" stroke-linecap="square"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

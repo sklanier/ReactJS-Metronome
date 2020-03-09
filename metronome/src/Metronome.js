@@ -6,25 +6,37 @@ import { ReactComponent as PlayIcon } from './img/play.svg'
 import { ReactComponent as PlayOnHoverIcon } from './img/playOnHover.svg'
 import { ReactComponent as PauseIcon } from './img/pause.svg'
 import { ReactComponent as PauseOnHoverIcon } from './img/pauseOnHover.svg'
+import Slider from './components/Slider';
 
 
 class Metronome extends Component {
     constructor(props) {
         super(props);
-    
+        
         this.state = {
             playing: false,
             count: 0,
             bpm: 100,
-            beatsPerMeasure: 4
+            beatsPerMeasure: 4,
+            isHover: false,
         };
+        this.onMouseEnterHandler = this.onMouseEnterHandler.bind(this);
+        this.onMouseLeaveHandler = this.onMouseLeaveHandler.bind(this);
 
         this.click1 = new Audio(click1);
         this.click2 = new Audio(click2);
     }
 
-    handleMouseOver = event => {
+    onMouseEnterHandler() {
+        this.setState({
+            isHover: true
+        });
+    }
 
+    onMouseLeaveHandler() {
+        this.setState({
+            isHover: false
+        });
     }
 
     handleBpmChange = event => {
@@ -109,14 +121,19 @@ class Metronome extends Component {
                 <div className="metronome">
                   <div className="bpm-slider">
                     <div>{bpm} BPM</div>
-                    <input
+                    <Slider
+                      className="sliderMain"
                       type="range"
                       min="40"
                       max="240"
                       value={bpm}
                       onChange={this.handleBpmChange} />
-                    <div onMouseOver={this.handleMouseOver}>
-                      {this.state.hover ? <PauseOnHoverIcon /> : button}
+                    <div className="playButton" onMouseEnter={this.onMouseEnterHandler} onMouseLeave={this.onMouseLeaveHandler} onClick={this.startStop}>
+                      {
+                        this.state.isHover
+                        ? <PlayOnHoverIcon/>
+                        : <PlayIcon/>
+                      }
                     </div>
                   </div>
                 </div>
