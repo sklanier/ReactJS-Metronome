@@ -135,6 +135,7 @@ class Metronome extends Component {
                         : <PlayIcon/>
                       }
                     </div>
+                    <div>testdiv</div>
                   </div>
                 </div>
               </div>
